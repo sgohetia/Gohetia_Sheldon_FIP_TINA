@@ -1,0 +1,400 @@
+p {
+  font-size: 14px;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+::before,
+::after {
+  font-family: "Font Awesome 5 Free";
+}
+
+.grid-full {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  column-gap: 30px;
+  max-width: 412px;
+  margin: 0 auto;
+}
+
+.title-section {
+  align-self: end;
+}
+
+.banner-section {
+  height: 195px;
+}
+
+.section-dining h3,
+.dropdown-content-list h4,
+.dropdown-content-list h5 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/* HOMEPAGE - FORM */
+#contact-hero-form input,
+#contact-hero-form textarea {
+  position: relative;
+}
+
+#contact-hero-form input:not(:placeholder-shown),
+#contact-hero-form textarea:not(:placeholder-shown) {
+  border-color: #45d945;
+}
+
+#contact-hero-form input:placeholder-shown,
+#contact-hero-form textarea:placeholder-shown {
+  border-color: #e53d32;
+}
+
+.lightbox {
+  position: absolute;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 25px;
+  margin-top: 5px;
+  width: 412px;
+  top: 0;
+  background-color: #9a2018;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.lightbox_close {
+  position: absolute;
+  top: 10px;
+  right: 5%;
+  color: #fff;
+  font-size: 36px;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: all 0.5s ease-in-out;
+}
+
+.lightbox_close:hover {
+  color: #660902;
+}
+
+.lightbox:target {
+  display: block;
+}
+
+/* ROOMS PAGE */
+.section-rooms {
+  margin-bottom: 30px;
+}
+
+#hero-rooms {
+  background: url(../images/hp-mobl-heroRooms.jpg) no-repeat;
+  height: 200px;
+}
+
+#room-chateaus-con .banner-section {
+  background: url(../images/hp-mobl-heroRooms-m.jpg) no-repeat;
+}
+
+#room-villas-con .banner-section {
+  background: url(../images/hp-mobl-sec-03.rooms.jpg) no-repeat;
+}
+
+#room-masters-con .banner-section {
+  background: url(../images/hp-mobl-heroRooms.jpg) no-repeat;
+}
+
+#room-chalet-con .banner-section {
+  background: url(../images/hp-mobl-sec-01.1-rooms.jpg) no-repeat;
+}
+
+#room-exotics-con .banner-section {
+  background: url(../images/hp-mobl-heroRooms-mm.jpg) no-repeat;
+}
+
+#room-juniors-con .banner-section {
+  background: url(../images/hp-mobl-sec-04.4-rooms.jpg) no-repeat;
+}
+
+#main-info-rooms {
+  padding: 30px 15px 50px;
+  background-color: #ededed;
+  line-height: 24px;
+}
+
+#main-info-rooms h3,
+#rooms-intern-summary h3 {
+  font-size: 14px;
+}
+
+#main-info-rooms li,
+#rooms-intern-summary li {
+  border-bottom: 1px solid #9a2018;
+  padding: 5px 0 0px;
+  font-size: 12px;
+}
+
+.rooms-list-items {
+  margin-bottom: 15px;
+}
+
+.rooms-list-items li {
+  position: relative;
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.rooms-list-items li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #c54242;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.rooms-list-items + a {
+  background-color: #c54242;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 26px;
+}
+
+.rooms-list-items + a:hover {
+  background-color: #e21405;
+}
+
+/* /ROOMS PAGE CSS */
+
+#hero-intern-rooms {
+  background: url(../images/hp-mobl-heroRooms.jpg) no-repeat;
+  height: 200px;
+}
+#rooms-intern-summary ul {
+  margin-top: 10px;
+}
+
+.btn-active:after {
+  content: "More Details & Photos";
+}
+.btn-active:hover::after {
+  content: "Coming Soon!";
+}
+.btn-active:active::after {
+  content: "Coming Soon!";
+}
+
+/* Spa/Activities PAGE CSS */
+
+#hero-spa {
+  background: url(../images/hp-mobl-hero-spa-mm.jpg) no-repeat;
+  height: 200px;
+}
+#spa-registered-massage .banner-section {
+  background: url(../images/hp-mobl-hero-spa.jpg) no-repeat;
+}
+#spa-hotstones .banner-section {
+  background: url(../images/hp-mobl-sec-01-spa1.jpg) no-repeat;
+}
+#spa-handfoot .banner-section {
+  background: url(../images/hp-mobl-sec-01.1-spa.jpg) no-repeat;
+}
+#spa-scrubsWraps .banner-section {
+  background: url(../images/hp-mobl-sec-03.spa.jpg) no-repeat;
+}
+.spa-btn {
+  background-color: #9a2018;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 26px;
+}
+.spa-btn:hover {
+  background-color: #e21405;
+}
+.spa-btn:after {
+  content: "Registered Massage Therapy";
+}
+.spa-btn:hover::after {
+  content: "Click for more details!";
+}
+.spa-btn-hotstone {
+  background-color: #9a2018;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 26px;
+}
+.spa-btn-hotstone:hover {
+  background-color: #e21405;
+}
+.spa-btn-hotstone:after {
+  content: "Hot Stones, Body Molding, Indian Head Massage";
+}
+.spa-btn-hotstone:hover::after {
+  content: "Click for more details!";
+}
+.spa-btn-handfoot {
+  background-color: #9a2018;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 26px;
+}
+.spa-btn-handfoot:hover {
+  background-color: #e21405;
+}
+.spa-btn-handfoot:after {
+  content: "Hand/Foot Treatments";
+}
+.spa-btn-handfoot:hover::after {
+  content: "Click for more details!";
+}
+.spa-btn-scrubs {
+  background-color: #9a2018;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 26px;
+}
+.spa-btn-scrubs:hover {
+  background-color: #e21405;
+}
+.spa-btn-scrubs:after {
+  content: "Scrubs, Wraps and Facials";
+}
+.spa-btn-scrubs:hover::after {
+  content: "Click for more details!";
+}
+#main-info-rooms-spa {
+  padding: 30px 15px 50px;
+  background-color: #faf8f8;
+  line-height: 24px;
+}
+.spa-dropdwon {
+  font-size: 14px;
+}
+.spa-text-con {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.spa-price {
+  color: #c54242;
+}
+.spa-items {
+  margin-bottom: 16px;
+}
+.spa-items h3 {
+  background: #e8e7e7;
+  padding: 16px;
+  font-size: 14px;
+}
+.spa-items h3:hover {
+  background-color: #9a2018;
+  color: #fff;
+}
+.spa-waxing-image {
+  overflow: hidden;
+}
+#waxing-bottom-nav {
+  text-align: center;
+  background-color: #cf6666;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#waxing-bottom-nav:hover {
+  background-color: #9a2018;
+}
+#waxing-bottom-nav ol {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+#waxing-bottom-nav ol li {
+  display: inline;
+}
+
+#waxing-bottom-nav ol li a {
+  padding: 5px;
+  color: #fff;
+}
+.waxing-btn:after {
+  font-family: inherit;
+  content: "CLICK TO LEARN MORE...";
+}
+.waxing-btn:active::after {
+  content: "COMING SOON!";
+  color: #9a2018;
+}
+
+/* Packages PAGE CSS */
+
+#hero-packages {
+  background: url(../images/hp-mobl-hero-package.jpg) no-repeat;
+  height: 200px;
+}
+.pac-items {
+  margin-bottom: 16px;
+}
+.package-items {
+  margin-bottom: 16px;
+}
+.package-items h3 {
+  background: #9a2018;
+  color: #fff;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.package-waxing-image {
+  padding-right: 100px;
+  align-items: center;
+  overflow: hidden;
+}
+#rental-rate-bottom-nav {
+  text-align: center;
+  background-color: #cf6666;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#rental-rate-bottom-nav:hover {
+  background-color: #9a2018;
+}
+#rental-rate-bottom-nav ol {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+#rental-rate-bottom-nav ol li {
+  display: inline;
+}
+
+#rental-rate-bottom-nav ol li a {
+  padding: 5px;
+  color: #fff;
+}
+.pac-btn:after {
+  font-family: inherit;
+  content: "CLICK TO LEARN MORE...";
+}
+.pac-btn:active::after {
+  content: "COMING SOON!";
+  color: #9a2018;
+}
